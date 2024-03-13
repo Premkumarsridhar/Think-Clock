@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battery Cell Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Battery Cell Information Submission</h1>
+    <div class="form-container">
+    <form id="uploadForm">
+        <label for="cellImage">Upload Cell Image:</label>
+        <input type="file" id="cellImage" name="cellImage"><br><br>
+
+        <label for="cellCondition">Cell Condition:</label>
+        <select id="cellCondition" name="cellCondition">
+            <option value="new">New</option>
+            <option value="recycled">Recycled</option>
+        </select><br><br>
+        
+        <!-- Additional meta information fields -->
+
+        <label for="nominalVoltage">Nominal Voltage (V):</label>
+        <input type="number" id="nominalVoltage" name="nominalVoltage" value="3.6"><br><br>
+
+        <label for="nominalEnergy">Nominal Energy (Wh):</label>
+        <input type="number" id="nominalEnergy" name="nominalEnergy" value="16.2"><br><br>
+
+        <label for="voltageRange">Voltage Range (V):</label>
+        <input type="text" id="voltageRange" name="voltageRange" value="2.5-4.2"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+    <form id="uploadCSV">
+        <label for="dataFile">Upload Data File (CSV):</label>
+        <input type="file" id="dataFile" name="dataFile"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+    <div id="cellIdAndBarcode" class="output-display">
+        <!-- Cell ID and Barcode will be displayed here -->
+    </div>
+
+    <div id="bodePlotDiv" style="width:100%;height:100%;">
+    </div>
+
+    <div id="sohDisplay" class="soh-display">
+        <div class="soh-info">
+            <span class="battery-icon">🔋</span>
+            <span id="sohValue">--%</span>
+        </div>
+        <div class="progress-bar">
+            <div id="sohProgressBar" class="progress"></div>
+        </div>
+    </div>
+    
+
+    <!-- Include Plotly.js in your HTML -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #e6ebe9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 2, 0, 1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.upload-form {
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.output-display, .plot-display {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+.plot-display {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    resize: both;
+    overflow: auto;
+}
+
+.plot-header {
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: move; /* Change cursor to indicate moveability */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.move-icon {
+    float: right;
+}
+
+.soh-display {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.soh-info {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.battery-icon {
+    font-size: 1.5em;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    width: 100%;
+    height: 20px;
+}
+
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 8px;
+    width: 0%;
+}
